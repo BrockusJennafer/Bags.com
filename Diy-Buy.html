@@ -16,6 +16,9 @@ body {font-family: "Times New Roman", Georgia, Serif;
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
 
 }
 
@@ -25,9 +28,15 @@ img{
   margin-right: auto;
 }
 
+p{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .poof{
-  margin-left: 200px;
-  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .main-topic {
@@ -112,6 +121,12 @@ span{
  padding-top: 50;
  padding-left: 20;
 }
+/* for scrollable area */
+
+.my-scrolling {
+    height: 300px;
+    overflow: auto;}
+
 </style>
 </head>
 <body>
@@ -120,32 +135,230 @@ span{
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-brown w3-padding-12 w3-card" style="letter-spacing:4px;">
-    <a href="#index.html" class="w3-bar-item w3-button" target="_blank">BAGS</a>
-    
-    <div class="w3-center w3-hide-small">
-      <a href="javascript:void(0)" class="w3-bar-item w3-button" target="_blank">SEARCH</a>
+  <div
+    class="w3-bar w3-brown w3-padding-12 w3-card"
+    style="letter-spacing: 4px"
+  >
+    <a href="index.html" class="w3-bar-item w3-button" target="_blank"
+      >BAGS</a
+    >
 
-      <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-      <a href="Bags/index_html/Our-Mission.html">Our-Mission</a>
-      <a href="Bags/index_html/Diy-Buy.html">Diy or Buy</a>
+    <div class="w3-center w3-hide-small">
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button"
+        target="_blank"
+        >SEARCH</a
+      >
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >X</a
+      >
+      <a href="Our-Mission.html">Our-Mission</a>
+      <a href="Diy-Buy.html">Diy or Buy</a>
       <a href="Projects.html">Projects</a>
       <a href="Recycling-to-save.html">Recycling to Save</a>
       <a href="Contact-Us.html">Contact Us</a>
-      </div>
     </div>
-    <span style="font: size 22px;cursor:pointer" onclick="openNav()">MENU</span>
+    <span
+      class="w3-bar-item w3-button"
+      style="cursor: pointer"
+      onclick="openNav()"
+      >MENU</span>
+
+    <div>
+      <a href="https://www.papermart.com/p/recycled-kraft-shopping-bags/4132" 
+      class="w3-bar-item w3-button"
+      target="_blank"><svg xmlns="http://www.w3.org/2000/svg" 
+      height="30"
+      width="30"
+      viewBox="0 0 750 600">
+        <path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 
+        24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"></svg>
+      </a>
+      </div>
   </div>
 </div>
 
 <!--Header-->
 <header class="w3-display-container w3-content-padding-16" style="max-width:1600px;min-width:150px"  id="home">
-  
-  
+<br>
+<br>
+<H2 class="poof">Two of Our projects you can make!</H2>
+<div class="w3-row">
+  <div class="w3-col s4 w3-padding w3-sand">
+    <div
+      class="w3-brown w3-center"
+      style="
+        margin-left: -16px;
+        margin-right: -16px;
+        margin-top: -18px;
+      "
+    >
+      <h2>Tips</h2>
+    </div>
+    <div class="my-scrolling" style="padding-right: 10px">
+      <p>
+        * Remember, you can customize a lot of this to your desire!
+        Any face, any color the only limit is your imagination.
+<br>
+        * You can put a outter layer of the puppet as a protective waterproof layer.
+        <br>
+        * For best results with the kite, make sure to border the outside with plastic bag to make the kite more airdynamic. 
+<br>
+        * You can also use bits of bag shreds to be the kite tails.
+      </p>
+    </div>
+  </div>
 
-<br>
-<br>
+
+
+
+
+<div id="chef" class="w3-container w3-padding-top-64">
+  <h1 class="w3-center">Photo Gallery</h1>
+
+  <div class="w3-row-padding" style="margin: 15px 0px">
+    <!-- first thumbnail image created below -->
+    <div class="w3-col s4">
+      <img
+        src="/img/Fun dyis/grocery-bag-book-covers-w.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal01').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+
+    <div class="w3-col s4">
+      <img
+        src="/img/Kites/paperbag kites ribbons.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal02').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+
+    <div class="w3-col s4">
+      <img
+        src="/img/Fun dyis/paper-bag-puppets-23-700x1050-1-700x1050.jpg"
+        style="width: 50%; cursor: zoom-in"
+        onclick="document.getElementById('modal03').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+  </div>
+
+  <!-- follow the samples above to create second row of thumbnail images here-->
+  <div class="w3-row-padding" style="margin: 15px 0px"></div>
+
+ 
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+  
+    <div class="w3-modal-content w3-animate-zoom">
+      <h4 class="w3-center">Paper book cover</h4>
+      <img src="/img/Fun dyis/grocery-bag-book-covers-w.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+    <span
+    class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+    style="cursor: pointer"
+    >&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <h4 class="w3-center">Kite</h4>
+      <img src="/img/Kites/paperbag kites ribbons.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+    <span
+    class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+    style="cursor: pointer"
+    >&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <h4 class="w3-center">Puppet</h4>
+      <img src="/img/Fun dyis/paper-bag-puppets-23-700x1050-1-700x1050.jpg" style="width: 50%" />
+    </div>
+  </div>
+  <!--Second row of thumbnails-->
+  <div class="w3-row-padding" style="margin: 15px 0px">
+    <!-- first thumbnail image created below -->
+    <div class="w3-col s4">
+      <img
+        src="/img/Halloween/paper-bag-pumpkin-patch.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal04').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+
+    <div class="w3-col s4">
+      <img
+        src="/img/Halloween/Horse hat.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal05').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+
+    <div class="w3-col s4">
+      <img
+        src="/img/Fun dyis/origami-boat-feature-720x540.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal06').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+  </div>
+
+  <!-- follow the samples above to create second row of thumbnail images here-->
+  <div class="w3-row-padding" style="margin: 15px 0px"></div>
+
+ 
+  <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+  
+    <div class="w3-modal-content w3-animate-zoom">
+      <h4 class="w3-center">Pumpkins</h4>
+      <img src="/img/Halloween/paper-bag-pumpkin-patch.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+    <span
+    class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+    style="cursor: pointer"
+    >&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <h4 class="w3-center">Horse Hat</h4>
+      <img src="/img/Halloween/Horse hat.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+    <span
+    class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+    style="cursor: pointer"
+    >&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <h4 class="w3-center">origami Boat</h4>
+      <img src="/img/Fun dyis/origami-boat-feature-720x540.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+
 
 <!--Page-content-->
 <script>
@@ -158,7 +371,7 @@ span{
   }
 </script>
 
-<footer class="w3-center w3-brown w3-padding-32">
+<footer class="w3-center w3-brown w3-padding-28">
   <a href="https://x.com/?lang=en" target="_blank"><svg 
   xmlns="http://www.w3.org/2000/svg" 
   height="50"
