@@ -252,9 +252,68 @@ span{
 <h2></h2>
 
 
+<div class="w3-row">
+  <!-- create an area to hold both accordion button and content -->
+  <div class="w3-col s6 w3-left" style="padding-right: 3px">
+    <!-- add accordion button here -->
+    <!-- set button to 'accordion1' below -->
+    <button
+      onclick="myAccordion('accordion1')"
+      class="w3-button w3-block w3-brown w3-center-align"
+      id="accordionBtn1"
+    >
+      <h4>You can ship your recycables to us<i class="fa fa-caret-down"></i></h4>
+    </button>
+    <!-- add accordion content here -->
+    <div
+      id="accordion1"
+      class="w3-hide w3-container"
+      style="height: 200px"
+    >
+      <p>
+        You can send us your recycling to free up hassle free of charge! As easy as 
+        folding up a paper bag, we can provide shipping materials if you don't have any.
+      </p>
+    </div>
+  </div>
+  <!-- repeat the steps to create another accordion button and content here -->
+  <!-- make sure set the button id to 'accordion2' below -->
+  <!-- each button id should be unique -->
+  <div class="w3-col s6 w3-left" style="padding-left: 3px">
+    <button
+      onclick="myAccordion('accordion2')"
+      class="w3-button w3-block w3-brown w3-center-align"
+      id="accordionBtn1"
+    >
+      <h4>Buy one of our crafts<i class="fa fa-caret-down"></i></h4>
+    </button>
+    <div
+      id="accordion2"
+      class="w3-hide w3-container"
+      style="height: 200px"
+    >
+      <p>
+        Donating your recyclables gives anyone 15% off on charges for any of our projects that bought to be made for them.
+      </p>
+    </div>
+  </div>
+</div>
 
-
-
+<script>
+  // begin added for accordion
+  function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-sand");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-sand", "w3-brown");
+        }
+      }
+</script>
 
 <footer class="w3-center w3-brown w3-padding-28">
   <a href="https://x.com/?lang=en" target="_blank"><svg 
